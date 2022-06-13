@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+body{
+    font-family: 'Oswald', sans-serif;
+}
+/*Variables */
+:root {
+    --primary: #212934;
+    --secondary: #59ab6e;
+    --text: #212529;
+    --light : #ffffff;
+    --bg-hero: #efefef;
+    --bg-second : #e9eef5;
+}
+
+/*Utility Classes*/
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+
+
+/* Header Section Css*/
+header .navBar{
+    background: var(--primary);
+}
+header .navBar .leftNav{
+    margin: 15px 95px;
+}
+header .navBar .leftNav i {
+    color: var(--light);
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+header .navBar .leftNav i:hover{
+    color: var(--secondary);
+}
+header .navBar .leftNav a{
+    color: var(--light);
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+header .navBar .leftNav a:hover{
+    color: var(--secondary);
+}
+
+header .navBar .rightNav{
+    margin: 15px 160px;
+}
+header .navBar .rightNav i{
+    color: var(--light);
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+header .navBar .rightNav i:hover{
+    color: var(--secondary);
+}
+
+header .mainHeader{
+    display: flex;
+    justify-content: space-between;
+    background: var(--bg-second);
+}
+header .mainHeader .logo {
+    margin: 0 85px;
+}
+header .mainHeader .logo img {
+    height: 75px;
+    padding: 0px 5px;
+    cursor: pointer;
+}
+.navSection a {
+    color: var(--primary);
+    margin-right: 80px;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navSection a:hover{
+    color: var(--secondary);
+}
+.cartSection {
+    margin-right: 25px;
+}
+.cartSection i {
+    margin-right: 23px;
+    margin-top: 19px;
+    font-size: 23px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cartSection i:hover{
+    color: var(--secondary);
+}
+
+.hero{
+    background: var(--bg-hero);
+}
+.hero .heroContainer {
+    width: 1120px;
+    margin: 0 auto;
+    display: flex;
+}
+.hero .heroContainer .heroLeft h1 {
+    padding: 30px 160px;
+    padding-top: 100px;
+    font-weight: 100;
+}
+.hero .heroContainer .heroLeft h2 {
+    padding: 0 90px;
+    font-size: 29px;
+    padding-bottom: 20px;
+    font-weight: 100;
+}
+.hero .heroContainer .heroLeft span {
+    color: var(--secondary);
+    font-size: 39px;
+}
+
+.hero .heroContainer .heroLeft p {
+    font-size: 21px;
+    letter-spacing: 1.5px;
+    padding-left: 95px;
+}
+.hero .heroContainer .heroRight img {
+    width: 540px;
+}
+
+/* Header Section End */
+
+
+/* Catagories Section Start */
+
+section.catagories {
+    margin-bottom: 90px;
+}
+section.catagories h1 {
+    margin: 0 auto;
+    width: 400px;
+    font-size: 34px;
+    margin-top: 50px;
+    padding-bottom: 25px;
+    font-weight: 100;
+}
+section.catagories p {
+    width: 505px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.catagoriesContainer {
+    width: 1052px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.catagoriesContainer .cataDiv {
+    width: 300px;
+    height: 435px;
+    
+}
+.cataImg {
+    width: 300px;
+    overflow: hidden;
+    height: 300px;
+    border-radius: 50%;
+}
+.cataImg img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.cataDiv span {
+    display: block;
+    width: 60px;
+    margin-left: 100px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.cataDiv button {
+    margin: 25px 100px;
+    width: 115px;
+    font-size: 17px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: var(--secondary);
+    color: var(--light);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.cataDiv button:hover {
+    background: var(--primary);
+    color: var(--light);
+}
+
+/* Catagories CSS END */
+
+/* Featured Product CSS START */
+.featuredSection{
+    height: 1000vh;
+}
+.featuredContainer {
+    margin: 50px auto;
+    display: flex;
+    width: 1080px;
+    justify-content: space-between;  
+}
+.featuredCart {
+    width: 320px;
+    overflow: hidden;
+    border: 0.5px solid #cdcdcd;
+    padding-bottom: 10px;
+    background: var(--bg-hero);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.featuredCartImg {
+    height: 260px;
+    margin-bottom: 15px;
+}
+
+.featuredCartImg img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+section.featuredSection {
+    background: var(--bg-second);
+}
+section.featuredSection h1 {
+    display: block;
+    margin: 0 auto;
+    width: 315px;
+    padding-top: 55px;
+    font-size: 37px;
+    font-weight: 100;
+}
+section.featuredSection p {
+    width: 555px;
+    font-size: 19px;
+    line-height: 1.4;
+    margin: 17px auto;
+}
+
+.featuredCart h1 {
+    margin: 0 25px !important;
+    margin-top: -40px !important;
+    font-weight: 100;
+    cursor: pointer !important;
+    transition: 0.3s !important;
+    font-size: 25px !important;
+}  
+.featuredCart h1:hover{
+    color: var(--secondary) !important;
+}
+.featuredCart p {
+    font-size: 15px !important;
+    width: 85% !important;
+    color: var(--text) !important;
+}
+.featuredCart span {
+    padding: 5px;
+    margin-right: 100px;
+    font-size: 20px;font-weight: 600;
+    color: #7a7575 !important;
+}
+
+
+
+
